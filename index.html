@@ -48,7 +48,6 @@
 
             } else {
                 //cep é inválido.
-                limpa_formulário_cep();
                 alert("Formato de CEP inválido.");
             }
 
@@ -67,32 +66,37 @@
     </nav>
 
     <div class="content">
-        <form class="formPesquisaCep" action="get">
-            <div>
-                Cep:
-                <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);">
-            </div>
-            <div>
-                Rua:
-                <input type=" " name="rua" id="rua" disabled>
-            </div>
-            <div>
-                Bairro:
-                <input type="text" name="bairro" id="bairro" disabled>
-            </div>
-            <div>
-                Cidade:
-                <input type="text" name="cidade" id="cidade" disabled>
-            </div>
-            <div>
-                Estado:
-                <input type="text" name="uf" id="uf" disabled>
-            </div>
-            <div>
-                IBGE:
-                <input type="text" name="ibge" id="ibge" disabled>
-            </div>
-        </form>
+        BuscaCEP
+        <div class="container-apresentacao">
+            <form class="formPesquisaCep" action="get">
+                <div>
+                    <label>Cep:</label>
+                    <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);">
+                </div>
+                <div>
+                    <label>Rua:</label>
+                    <input type=" " name="rua" id="rua" disabled>
+                </div>
+                <div>
+                    <label>Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" disabled>
+                </div>
+                <div>
+                    <label>Cidade</label>
+                    <input type="text" name="cidade" id="cidade" disabled>
+                </div>
+                <div>
+                    <label>Estado</label>
+                    <input type="text" name="uf" id="uf" disabled>
+                </div>
+                <div>
+                    <label>IBGE</label>
+                    <input type="text" name="ibge" id="ibge" disabled>
+                </div>
+            </form>
+            asdasdas
+            <img src="" alt="">
+        </div>
     </div>
 
 </body>
