@@ -9,56 +9,88 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     height: 5vh;
     background-color: rgb(73, 73, 71);
 
     color: white;
+    font-size: 1.5rem;
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 5vh 40vh 40vh 5vh;
     background-color: rgb(255, 255, 255);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+
+
 }
 
 .container-apresentacao {
-    display: flex;
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/4;
     align-items: center;
     justify-content: center;
-    width: 80vw;
-    height: 80vh;
-    background-color: rgb(192, 72, 72);
 
-    border-radius: 40px;
+    background-color: brown;
 
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.digiteCep{
+    background-color: rgb(250, 250, 252);
+    border-radius: 15px;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    color: black;
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+
+    margin-bottom: 2vh;
 }
 
 
 
 /* Formulario cep */
 .formPesquisaCep {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     text-align: center;
     font-size: 2rem;
     color: white;
+
+
 }
 
 .formPesquisaCep label {
     /*     background-color: rgb(226, 226, 226); */
     display: inline-block;
-    width: 140px;
+    width: 100px;
     text-align: right;
 }
 
 .formPesquisaCep input {
-    width: 35vw;
+    width: 25vw;
     height: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.div-imagem {
+    display: grid;
+    grid-column: 4/6;
+    grid-row: 2/4;
+    background-color: brown;
+
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.imagem-cep {
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px white
 }
