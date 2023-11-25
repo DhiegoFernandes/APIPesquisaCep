@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BuscaCep API</title>
     <link rel="stylesheet" href="api.css">
 
     <script>
@@ -61,17 +61,18 @@
 
     <nav class="nav">
         <div>
-            <h1>BuscaCep</h1>
+            <h1 class="buscaCEP">BuscaCep Brasil</h1>
         </div>
     </nav>
 
     <div class="content">
         <div class="container-apresentacao">
-            
+
             <form class="formPesquisaCep" action="get">
                 <h2 class="digiteCep">Digite o CEP:</h2>
+                <p class="p-digiteCep">Informe o CEP para buscar um endereço:</p>
                 <div>
-                    <label>Cep:</label>
+                    <label>CEP:</label>
                     <input name="cep" type="text" id="cep" value="" onblur="pesquisacep(this.value);">
                 </div>
                 <div>
@@ -97,8 +98,9 @@
             </form>
         </div>
         <div class="div-imagem">
-            <img class="imagem-cep" src="./images/location.jpg" alt="">
+            <img class="imagem-brasil" src="./images/brazil.png" alt="">
         </div>
+        <img class="imagem-cep" src="./images/location.jpg" alt="">
     </div>
 
 </body>
